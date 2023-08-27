@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="./css/acount.css">
+  <script src="./js/route.js" defer></script>
+  <script src="./js/offlineAccount.js" type="module"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+  <header class="flex-container-horizontal">
+    <img id="user-profile-image" class="img-thumbnail" src="#" alt="Profile Image">
+    <div>
+      <p id="user-name">user</p>
+      <p>Credits: <span id="user-balance"></span></p>
+      <a href="" id="user-logout-link">
+        <p>Logout</p>
+      </a>
+    </div>
+  </header>
+  
+  <main class="flex_container-vertical">
+    <input id="my-history-button" class="flex-item" type="button" value="My History" onclick="location.href='myHistory.html'">
+    <input id="pending-wagers-button" class="flex-item" type="button" value="Pending Wagers" onclick="location.href='pendingWagers.html'">
+    <input id="accepted-wagers-button" class="flex-item" type="button" value="Accepted Wagers" onclick="location.href='acceptedWagers.html'">
+
+  </main>
+
+  <nav>
+    <button id="browse-btn" onclick="location.href='browse.html'">Browse</button>
+    <button id="creaet-btn" onclick="location.href='offlineCreate.html'">Create</button>
+    <button id="account-btn" onclick="location.href='offlineAccount.html'">Account</button>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,156 @@
+[
+  {
+    "id" : 1,
+    "userId": "Terquavion",
+    "gameId": 1,
+    "theirPick": "Tigers",
+    "myPick": "Lions",
+    "status": null,
+    "amount": 10,
+    "bet_status": "pending",
+    "date" : "2023-05-11T11:30:44Z"
+  },
+  {
+    "id" : 2,
+    "userId": "DJ",
+    "gameId": 2,
+    "theirPick": "Red",
+    "myPick": "Blue",
+    "status": null,
+    "amount": 20,
+    "bet_status": "pending",
+    "date" : "2023-03-14T12:00:00Z"
+  },
+  {
+    "id" : 3,
+    "userId": "Jarkel",
+    "gameId": 3,
+    "theirPick": "Tech",
+    "myPick": "State",
+    "status": null,
+    "amount": 15,
+    "bet_status": "pending",
+    "date" : "2023-06-01T12:30:30Z"
+  },
+  {
+    "id" : 4,
+    "userId": "Casey",
+    "gameId": 1,
+    "theirPick": "Lions",
+    "myPick": "Tigers",
+    "status": null,
+    "amount": 10,
+    "bet_status": "pending",
+    "date" : "2023-03-02T12:00:30Z"
+  },
+  {
+    "id" : 5,
+    "userId": "DJ",
+    "gameId": 3,
+    "theirPick": "State",
+    "myPick": "A&M",
+    "status": null,
+    "amount": 15,
+    "bet_status": "pending",
+    "date" : "2023-05-01T12:00:30Z"
+  },
+  {
+    "id" : 6,
+    "userId": "Jarkel",
+    "gameId": 3,
+    "theirPick": "Tech",
+    "myPick": "State",
+    "status": null,
+    "amount": 25,
+    "bet_status": "pending",
+    "date" : "2023-06-08T12:30:30Z"
+  },
+  {
+    "id" : 7,
+    "userId": "Casey",
+    "gameId": 1,
+    "theirPick": "A&M",
+    "myPick": "Tech",
+    "status": null,
+    "amount": 10,
+    "bet_status": "pending",
+    "date" : "2023-03-02T11:00:30Z"
+  },
+  {
+    "id" : 8,
+    "userId": "Terquavion",
+    "gameId": 1,
+    "theirPick": "Tigers",
+    "myPick": "Lions",
+    "status": null,
+    "amount": 10,
+    "bet_status": "pending",
+    "date" : "2023-05-11T11:30:44Z"
+  },
+  {
+    "id" : 9,
+    "userId": "DJ",
+    "gameId": 2,
+    "theirPick": "Red",
+    "myPick": "Blue",
+    "status": null,
+    "amount": 20,
+    "bet_status": "pending",
+    "date" : "2023-03-14T12:00:00Z"
+  },
+  {
+    "id" : 10,
+    "userId": "Jarkel",
+    "gameId": 3,
+    "theirPick": "Tech",
+    "myPick": "State",
+    "status": null,
+    "amount": 15,
+    "bet_status": "pending",
+    "date" : "2023-06-01T12:30:30Z"
+  },
+  {
+    "id" : 11,
+    "userId": "Casey",
+    "gameId": 1,
+    "theirPick": "Lions",
+    "myPick": "Tigers",
+    "status": null,
+    "amount": 10,
+    "bet_status": "pending",
+    "date" : "2023-03-02T12:00:30Z"
+  },
+  {
+    "id" : 12,
+    "userId": "DJ",
+    "gameId": 3,
+    "theirPick": "State",
+    "myPick": "A&M",
+    "status": null,
+    "amount": 15,
+    "bet_status": "pending",
+    "date" : "2023-05-01T12:00:30Z"
+  },
+  {
+    "id" : 13,
+    "userId": "Jarkel",
+    "gameId": 3,
+    "theirPick": "Tech",
+    "myPick": "State",
+    "status": null,
+    "amount": 25,
+    "bet_status": "pending",
+    "date" : "2023-06-08T12:30:30Z"
+  },
+  {
+    "id" : 14,
+    "userId": "Casey",
+    "gameId": 1,
+    "theirPick": "A&M",
+    "myPick": "Tech",
+    "status": null,
+    "amount": 10,
+    "bet_status": "pending",
+    "date" : "2023-03-02T11:00:30Z"
+  }
+]

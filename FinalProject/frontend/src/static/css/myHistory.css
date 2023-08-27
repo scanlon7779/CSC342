@@ -1,0 +1,19 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex-item {
+  
+}
+
+.bet-item {
+  border: 1px solid black;
+  padding: 10px;
+}

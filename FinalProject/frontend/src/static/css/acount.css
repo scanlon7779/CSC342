@@ -1,0 +1,33 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container-horizontal {
+  display: flex;
+  gap: 10px;
+}
+
+.flex_container-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex-item {
+  height: 100%;
+  font-size: 2rem;
+}
+
+
+#user-profile-image {
+  width: 150px;
+  height: 150px;
+}
+
+#user-name {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+

@@ -1,0 +1,11 @@
+[
+  {
+    "betId":1,
+    "gameId":1,
+    "userOneId":1,
+    "userTwoId":2,
+    "pick":"Tigers",
+    "status":"Lost",
+    "amount":10
+  }
+]

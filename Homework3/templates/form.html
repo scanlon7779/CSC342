@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/js/script.js" defer></script>
+    <title>Form</title>
+</head>
+<body>
+    <form action="/send" method="POST">
+        <div class="container">
+            <div class="sender">
+                <h1>
+                    Sender Details
+                </h1>
+                <img id="preview"/>
+                <input type="file" accept="image/*" onchange="previewImage(event)" required>
+                <script>
+                    const previewImage = e => {
+                        const reader = new FileReader();
+                        reader.readAsDataURL(e.target.files[0]);
+                        reader.onload = () => {
+                            const preview = document.getElementById('preview');
+                            preview.src = reader.result;
+                        };
+                    };
+                </script><br>
+                <div class="fname" >
+                    <label for="sendfname">First name:</label><br>
+                    <input type="text" id="sendfname" name="sendfname" required>
+                </div>
+                <div class="lname">
+                    <label for="sendlname">Last name:</label><br>
+                    <input type="text" id="sendlname" name="sendlname" required><br>
+                </div>
+            </div>
+            <div class="recipient">
+                <h1>
+                    Recipient Details
+                </h1>
+                <div class="fname" >
+                    <label for="recfname">First name:</label><br>
+                    <input type="text" id="recfname" name="recfname" required>
+                </div>
+                <div class="lname">
+                    <label for="reclname">Last name:</label><br>
+                    <input type="text" id="reclname" name="reclname" required><br>
+                </div>
+
+                <label for="comment">Message</label><br>
+                <textarea name="comment" minlength="10" rows="5" cols="33" required></textarea><br>
+    
+                <p>Nofity Recipient:</p>
+                <input type="radio" id="emailb" name="notify" value="email" required onChange="emailReq(true)">
+                <label for="emailb">Email</label>
+                <input type="radio" id="smsb" name="notify" value="sms" onChange="smsReq(true)">
+                <label for="smsb">SMS</label>
+                <input type="radio" id="none" name="notify" value="none">
+                <label for="none">Do not notify</label><br>
+    
+                <div class="email">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone Number:</label><br>
+                    <input placeholder="111-222-3333" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+                
+            </div>
+        </div>
+
+        
+
+        <div class="payment">
+            <h1>
+                Payment Details
+            </h1>
+            <div class="cardtype">
+                <label for="cardtype">Card type:</label><br>
+                <select name="cardtype" id="cardtype" required>
+                    <option name="" value="" style="display:none;">Select</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="visa">Visa</option>
+                    <option value="americanexpress">American Express</option>
+                    <option value="discover">Discover</option>
+                </select>
+            </div>
+            
+            <div class="ccnum">
+                <label for="ccnum">Credit card number</label><br>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required><br>
+            </div><br>
+            
+            <div class="month">
+
+                <label for="month">Expiration Month:</label><br>
+                <select name="month" id="month" placeholder="MM" required>
+                    <option name="" value="" style="display:none;">MM</option>
+                    <option name="January" value="Jan">January</option>
+                    <option name="February" value="Feb">February</option>
+                    <option name="March" value="Mar">March</option>
+                    <option name="April" value="Apr">April</option>
+                    <option name="May" value="May">May</option>
+                    <option name="June" value="Jun">June</option>
+                    <option name="July" value="Jul">July</option>
+                    <option name="August" value="Aug">August</option>
+                    <option name="September" value="Sep">September</option>
+                    <option name="October" value="Oct">October</option>
+                    <option name="November" value="Nov">November</option>
+                    <option name="December" value="Dec">December</option>
+                </select>
+            </div>
+            <div class="year">
+
+                <label for="year">Expiration Year:</label><br>
+                <select id="year" name="year" placeholder="YYYY" required>
+                    <option name="" value="" style="display:none;">YYYY</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                    <option value="2031">2031</option>
+                    <option value="2032">2032</option>
+                    <option value="2033">2033</option>
+                    <option value="2033">2034</option>
+                    <option value="2033">2035</option>
+                </select>
+            </div>
+            <div class="ccv">
+                <label for="ccv">CCV:</label><br>
+                <input type="password" id="ccv" name="ccv" minlength="3" maxlength="4"  size="6" required>
+            </div>
+
+            <div class="amount">
+                <label for="amount">Amount ($):</label><br>
+                <input type="number" required name="amount" min="0" value="0" step=".01">
+                
+            </div>
+            <br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms"> I agree to the terms and conditions</label><br>
+        </div>
+        <input class="btn" type="submit">
+    </form>
+    
+    
+</body>

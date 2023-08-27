@@ -1,0 +1,135 @@
+.calculator-grid {
+    border: 1px solid #cccccc;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 425px;
+    background-color: thistle;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+    margin:auto;
+}
+
+button {
+    height: 60px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #202020;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(184, 159, 184);
+}
+
+.operator {
+    color: #fff;
+    background-color: #eebb24;
+}
+
+.equal-sign {
+    background-color: #25a8e0;
+    border-color: #25a8e0;
+    color: #fff;
+    grid-column: span 4;
+}
+
+.equal-sign:hover {
+    background-color: #4e9ed4;
+}
+
+.screen{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(164, 199, 207);
+    text-align: right;
+    color: black;
+    font-size: medium;
+    width: auto;
+    height: auto;
+    cursor: default;
+    padding: 15px; 
+    padding-left: 100%;
+    margin: auto;
+}
+
+table {
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+body {
+    background-color: darkslategrey;
+}
+
+.history {
+    border: 1px solid #cccccc;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 425px;
+    background-color: rgb(210, 164, 210);
+}
+
+h4 {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: solid 1px black;
+    padding: 0px;
+    margin-top: 5px;
+}
+
+.history-list {
+    height: 300px;
+    overflow-y: auto;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.history-list a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.history-list a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;
+}
+
+.clear-history {
+    padding:0px;
+    margin-top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: none;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.clear-history:hover {
+    color:gray;
+    background-color: none;
+}

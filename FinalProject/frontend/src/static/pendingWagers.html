@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/pendingWagers.css">
+  <script src="./js/pendingWagers.js" type="module"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
+</head>
+<body>
+
+  <main id="game-container" class="flex-container-vertical">
+
+  </main>
+
+  <div class="modal fade" id="edit-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Wager</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-column justify-content-center align-items-center g-3">
+            <div class="p-2">
+              <p id="edit-modal-date"></p>
+            </div>
+            <div class="p-2">
+              <div id="edit-modal-pick">
+                <span>Pick: </span>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio-team1" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio-team1" id="edit-modal-radio-team1"></label>
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio-vs" autocomplete="off" disabled>
+                  <label class="btn btn-outline-primary" for="btnradio-vs">vs</label>
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio-team2" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio-team2" id="edit-modal-radio-team2"></label>
+                </div>
+              </div>
+            </div>
+            <div class="p-2">
+              <span>Amount: </span>
+              <input id="edit-modal-amount-plus-button" type="button" class="btn btn-outline-primary" value="+">
+              <span id="edit-modal-amount"></span>
+              <input id="edit-modal-amount-minus-button" type="button" class="btn btn-outline-primary" value="-">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCEL</button>
+          <button id="edit-modal-confirm-button" type="button" class="btn btn-primary" data-bs-dismiss="modal">CONFIRM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <nav>
+    <button id="browse-btn" onclick="location.href='browse.html'">Browse</button>
+    <button id="creaet-btn" onclick="location.href='create.html'">Create</button>
+    <button id="account-btn" onclick="location.href='account.html'">Account</button>
+  </nav>
+</body>
+</html>

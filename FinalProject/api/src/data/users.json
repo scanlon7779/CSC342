@@ -1,0 +1,18 @@
+[
+  {
+    "userId" : 1,
+    "username" : "user1",
+    "balance" : 100,
+    "image" : "https://robohash.org/veniamdoloresenim.png?size=64x64&set=set1",
+    "salt": "48c8947f69c054a5caa934674ce8881d02bb18fb59d5a63eeaddff735b0e9",
+    "password": "83d9bdb5e20f3571b087db9aabf190a296741c3e864d7742f35658cfccc1b79c4599aad25084aa9a28c649a50c92244227b3e53e197621301d619d1ea01873c4"
+  },
+  {
+    "userId" : 2,
+    "username" : "user2",
+    "balance" : 100,
+    "image" : "https://robohash.org/veniamdoloresenim.png?size=64x64&set=set1",
+    "salt": "48c8947f69c054a5caa934674ce8881d02bb18fb59d5a63eeaddff735b0e9",
+    "password": "83d9bdb5e20f3571b087db9aabf190a296741c3e864d7742f35658cfccc1b79c4599aad25084aa9a28c649a50c92244227b3e53e197621301d619d1ea01873c4"
+  }
+]

@@ -1,0 +1,15 @@
+.game-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    overflow: auto;
+    border: solid 1pt black;
+    height: 200px;
+    width: 600px; 
+    gap: 15px;
+}
+
+#game-button {
+    border: solid 1pt black;
+    background-color: antiquewhite;
+}

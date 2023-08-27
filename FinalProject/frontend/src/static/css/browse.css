@@ -1,0 +1,17 @@
+#availableBets {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    overflow: auto;
+    border: solid 1pt black;
+    height: 600px;
+    width: 300px; 
+    gap: 15px;
+}
+
+#bet-button {
+    border: solid 1pt black;
+    background-color: antiquewhite;
+    margin-left: 2px;
+    margin-right: 2px;
+}

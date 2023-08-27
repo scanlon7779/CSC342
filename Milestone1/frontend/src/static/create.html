@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/create.css">
+  <script src="./js/create.js" type="module"></script>
+</head>
+<body>
+  
+  <header>
+    <h1>Select Game</h1>
+  </header>
+
+  <main>
+
+    <div id="create-betting-modal" class="modal">
+      <div class="modal-content">
+        <p id="game-date"></p>
+        <div id="pick-team">
+          <span>Pick: </span>
+          <input type="radio" name="team-selection" id="team1">
+          <label for="team1" id="team1-name"></label>
+          <input type="radio" name="team-selection" id="team2">
+          <label for="team2" id="team2-name"></label>
+        </div>
+        <div>
+          <span>Amount: </span>
+          <button id="amount-plus-button">+</button>
+          <span id="betting-amount"></span>
+          <button id="amount-minus-button">-</button>
+        </div>
+        <button id="create-betting-cancel-button">CANCEL</button>
+        <button id="create-betting-create-wager-button">CREATE WAGER</button>
+      </div>
+    </div>
+
+    <img src="" alt="">
+    <p>Basketball</p>
+    <div id="basketball" class="game-list flex-container">
+
+    </div>
+
+    <img src="" alt="">
+    <p>Soccer</p>
+    <div id="soccer" class="game-list flex-container">
+
+    </div>
+
+    <img src="" alt="">
+    <p>Football</p>
+    <div id="football" class="game-list flex-container">
+
+    </div>
+
+
+  </main>
+
+  <nav>
+    <button id="browse-btn" onclick="location.href='browse.html'">Browse</button>
+    <button id="creaet-btn" onclick="location.href='create.html'">Create</button>
+    <button id="account-btn" onclick="location.href='account.html'">Account</button>
+  </nav>
+  
+</body>
+</html>

@@ -1,0 +1,278 @@
+body{
+    font-family: 'Noto Serif', serif;
+    font-size: 14.5px;
+    color: #2f2f2f;
+    background-color: #f9f7f1;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #656262;
+    padding: 20px;
+
+}
+
+.sidebar p {
+    text-align: center;
+    font-size: 25px;
+    color:#f9f7f1;
+}
+
+.sidebar a {
+    padding: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    color:#f9f7f1;
+    display: block;
+  }
+
+.face{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sublink {
+    margin-left: 25px;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    margin-left: 200px;
+    overflow: hidden;
+    top: 0; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3;
+    gap: 10px;
+    
+}
+
+.left {
+    padding-left: 25px;
+    grid-column: 1 / 2;
+    text-align: center;
+    padding-top: 5px;
+}
+.greeting {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.right {
+    display: flex;
+    align-items: right;
+}
+  
+.right button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1.5rem;
+    margin-left: 12rem;
+    cursor: pointer;
+}
+  
+  .right img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .right span {
+    margin-right: 0.5rem;
+  }
+
+  #right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  /* Style for dropdown menus */
+  ul[role="menu"] {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    display: none;
+    padding: 0.5rem 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  ul[role="menu"] li {
+    padding: 0.5rem;
+  }
+  
+ul[role="menu"] li:hover {
+    background-color: #f2f2f2;
+}
+  
+.right div[tabindex="-1"]:focus ul[role="menu"] {
+    display: block;
+}
+
+main {
+    margin-left: 250px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 10px;
+}
+.borrowed {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    text-align: center;
+    font-size: 30px;
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px solid #2f2f2f;
+}
+
+.profits {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    text-align: center;
+    font-size: 30px;
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px solid #2f2f2f;
+}
+
+h5 {
+    font-weight: 900;
+    font-size: 30px;
+    margin: 10px;
+    text-align: left;
+}
+
+.conversion {
+    grid-column: 3 / 4;
+    grid-row: 1;
+    text-align: center;
+    font-size: 30px;
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px solid #2f2f2f;
+}
+
+.income {
+    grid-column: 4 / 5;
+    grid-row: 1;
+    text-align: center;
+    font-size: 30px;
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px solid #2f2f2f;
+}
+h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+    text-align: left;
+    border-bottom: 1px solid #2f2f2f;
+}
+.revenue {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: bisque;
+    border: 2px solid #2f2f2f;
+
+}
+
+.subtitle {
+    font-size: 25px;
+    text-align: left;
+}
+
+.map {
+    font-size: 20px;
+}
+
+.map img{
+    border-radius: 10px;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+    text-align: left;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.rev {
+    width: 100%;
+}
+
+h2 {
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: left;
+}
+
+img {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+h6 {
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.order {
+    margin: 10px;
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px solid #2f2f2f;
+    text-align: center;
+}
+
+.revloc {
+    margin: 10px;
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px solid #2f2f2f;
+    text-align: center;
+}
+
+.traffic {
+    margin: 10px;
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px solid #2f2f2f;
+    text-align: center;
+}
+
+.impressions {
+    margin: 10px;
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px solid #2f2f2f;
+    text-align: center;
+}
